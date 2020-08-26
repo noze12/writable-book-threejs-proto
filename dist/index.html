@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      .control {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+      }
+      .pencil {
+        stroke: lightgray;
+        fill: lightgray;
+        cursor: pointer;
+      }
+      .pencil.active {
+        stroke: #136FFF;
+        fill: #136FFF;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div class="control">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="pencil"><path d="M7.127 22.564l-7.126 1.436 1.438-7.125 5.688 5.689zm-4.274-7.104l5.688 5.689 15.46-15.46-5.689-5.689-15.459 15.46z"/></svg>
+      <input class="seek" type="range" min="0" value="0" style="width: 80%" tabindex="-1">
+    </div>
+  </body>
+</html>
